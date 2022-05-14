@@ -20,9 +20,6 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + "/index.html");
 });
 
-<<<<<<< Updated upstream
-app.listen(process.env.PORT);
-=======
 app.get("/messages", function (request, response) {
   response.json(messages);
 });
@@ -129,4 +126,3 @@ app.delete("/messages/:id", function (request, response) {
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log(`Server started on port: ${PORT}`));
->>>>>>> Stashed changes
